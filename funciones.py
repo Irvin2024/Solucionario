@@ -36,10 +36,13 @@ def serie_fracciones(n):
     while i<=n:
         print(str(i)+"/"+str(i+1),end=" ")
         i+=1
-serie_primos(10)
-
-serie_primos_naturales(10)
-
-print(factorial(6))
-
-serie_fracciones(12)
+def primo_n(numero):
+    i=2
+    primo=1
+    valor=0
+    while primo<=numero:
+        if es_primo(i):
+            primo+=1
+            valor=i
+        i+=1
+    return valor
